@@ -1,0 +1,34 @@
+/* 
+ * SteamTV Chat Filter - CSS Visual Components
+ * 
+ * This CSS works in conjunction with the DOM-level JavaScript filter
+ * to provide visual styling for filtered messages.
+ * 
+ * IMPORTANT: This CSS alone cannot filter text content like "!drop"
+ * It requires JavaScript to mark elements for filtering.
+ */
+
+/* Hide messages that JavaScript has marked as filtered */
+.steamtv-filtered-message {
+    display: none !important;
+}
+
+/* Visual styling for filtered message containers */
+.steamtv-filtered-container {
+    opacity: 0.3 !important;
+    max-height: 50px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Show filtered containers more clearly on hover */
+.steamtv-filtered-container:hover {
+    opacity: 1 !important;
+    max-height: 200px !important;
+}
+
+/* 
+ * NOTE: Pure CSS cannot filter text content
+ * This CSS requires JavaScript to mark elements as filtered
+ * See steamtv-filter-dom.js for the JavaScript implementation
+ */
