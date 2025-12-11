@@ -1,9 +1,0 @@
-/* Hide message content containing !drop */
-[class*="broadcastchat_MessageContents_"] {
-    display: none !important;
-}
-
-/* Hide entire message containers with !drop */
-[class*="BroadcastChatDiv"] [class*="broadcastchat_MessageChat_"] {
-    display: none !important;
-}
